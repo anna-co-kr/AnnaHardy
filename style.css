@@ -140,6 +140,7 @@ a{
 }
 #location .icon .appLink img {
     width:45px;
+    border-radius: 100%;
 }
 #location .icon ul li:not(:last-child){
     
