@@ -123,20 +123,15 @@
            <!-- 카카오 api 설치 -->
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
-      var is_pc = '1'
-      var app_key = '6682855173cf5ad99dfb4be4c47a1312'
 
-      Kakao.init(app_key);
+      Kakao.init('6682855173cf5ad99dfb4be4c47a1312');
 
       //카카오네비 실행
       function kakao_navi() {
-        if (is_pc == '1') {
-          alert('모바일 기기 전용 기능입니다')
-        }
         Kakao.Navi.start({
-          name: '메리스에이프럴', //목적지
-          x: 37.50426831693552,
-          y: 127.02912506234489,
+          name: '메리스 에이프럴', //목적지
+          x: 127.02911658626495,
+          y: 37.50428408662027,
           coordType: 'wgs84'
         });
       }
