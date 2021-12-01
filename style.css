@@ -82,7 +82,7 @@ a{
     .main_name {
         display:flex;
         justify-content: center;
-        margin: 8vh 0 0;
+        margin: 8vh 0;
     }
     .main_name img {
         margin: 0 4vw;
@@ -121,56 +121,6 @@ a{
    padding-bottom: 40px;
 }
 
-#title .introText{
-    width: 100%;
-    height: 43vh;
-    display: flex;
-    text-align: right;
-    /*수평우측*/
-    justify-content: flex-end;
-    /*수직우측*/
-    align-items: flex-end;
-}
-#title .introText h2{
-    
-    color: #444;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 800;
-    margin-bottom: 70px;
-}
-#title .introText p{
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 40px;
-}
-#call{
-    width: 100%;  
-}
-#call .banner img{
-    width: 100%;
-}
-#call .phone{
-text-align: center;
-height: 160px;
-}
-#call .phone li{
-  display: inline-block;
-  width:3rem;
-  margin-top:3vh;
-}
-#call .phone li:first-child {
-    float:left;
-    margin-left:22%;
-    
-}
-#call .phone li:last-child{
-    float:right;
-    margin-right:22%;
-}
-#call .phone p{
-   padding-top: 10px;
-}
 
 .map{
     padding-bottom: 30px;
