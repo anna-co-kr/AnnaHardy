@@ -1,0 +1,258 @@
+/*style.css*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+   /* common */
+
+   @font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    ul {
+        list-style: none;
+        margin:0;
+        text-decoration: none;
+    }
+    body {
+        background:#FEFBFB;
+        margin:0;
+        font-family: 'MapoGoldenPier', 'san serif'; 
+        max-width:800px;
+        color:#000;
+    }
+    header {
+        height:100%;
+    }
+    main {
+        text-align: center;
+        position: relative;
+        top: -7vh;
+        font-size: 16px;
+    }
+    p {
+        line-height:200%;
+        letter-spacing:-.05rem;
+    }
+    img {
+        width:100%;
+    }
+
+    /* header */
+
+    .body {
+        max-width:800px;
+        width:100%;
+        margin:0 auto;
+    }
+    .header_name {
+        font-size: 1.2rem;
+        line-height:150%;
+    }
+    .header_name li {
+        display: inline-block;
+        position:absolute;
+    }
+    .header_name li:first-child {
+        right:29vw;
+        top:8vh;
+    }
+    .header_name li:nth-child(2) {
+        right:19vw;
+        top:13vh;
+    }
+
+    .header_wedding_font {
+        width: 100%;
+        position: relative;
+        top:-8vh;
+    }
+
+    /* main */
+    .main_name {
+        display:flex;
+        justify-content: center;
+        margin: 8vh 0 0;
+    }
+    .main_name img {
+        margin: 0 4vw;
+        width: 6vw;
+    }
+    .main_date {
+        font-size: 3rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+        padding-bottom:1vh;
+    }
+    .main_info {
+        line-height:200%;
+    }
+    .main_flower {
+        width:13vw;
+        margin: 8vh 0;
+    }
+    .main_name_bold {
+        font-size: 1.5rem;
+    }
+    #main_name_font_size {
+        font-size: 16px;
+    }
+    .map_title {margin-top:10vh;}
+
+.line1{
+    width: 30%;
+    border-top: 1px solid #c4c4c4;
+    margin-top: 24px;
+    
+    margin-left: 35%;
+}
+#title .container{
+   padding-bottom: 40px;
+}
+
+#title .introText{
+    width: 100%;
+    height: 43vh;
+    display: flex;
+    text-align: right;
+    /*수평우측*/
+    justify-content: flex-end;
+    /*수직우측*/
+    align-items: flex-end;
+}
+#title .introText h2{
+    
+    color: #444;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+#title .introText p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+#call{
+    width: 100%;  
+}
+#call .banner img{
+    width: 100%;
+}
+#call .phone{
+text-align: center;
+height: 160px;
+}
+#call .phone li{
+  display: inline-block;
+  width:3rem;
+  margin-top:3vh;
+}
+#call .phone li:first-child {
+    float:left;
+    margin-left:22%;
+    
+}
+#call .phone li:last-child{
+    float:right;
+    margin-right:22%;
+}
+#call .phone p{
+   padding-top: 10px;
+}
+
+.map{
+    padding-bottom: 30px;
+}
+
+#location .icon {
+  margin-left: 30px;
+  margin-right: 30px;
+ 
+}
+#location .icon .appLink{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e2e2;
+}
+#location .icon .appLink img {
+    width:45px;
+}
+#location .icon ul li:not(:last-child){
+    
+    padding-right: 30px;
+}
+
+#location .icon ul li a p {
+   
+    font-size: 10px;
+}
+.transfer{
+    padding-top: 40px;
+    
+    text-align: center;
+}
+.transfer dt{
+    display:inline-block;
+    width:60%;
+    padding:1.3vh;
+    border-radius: 30px;
+    background:#c582aa;
+    color:#fff;
+    font-weight: bold;
+}
+.transfer dd{
+    padding-bottom: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 180%;;
+}
+
+.calendar {
+    text-align: center;
+}
+.calendar_img {
+    width:300px;
+    padding: 80px 0 50px;
+    border-top: 1px solid #e4e2e2;
+}
+
+footer{
+    width: 100%;
+    
+    background-color: #c582aa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+footer a.num{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+   
+}  
+footer p, p.strong{
+    font-size: 14px;
+}
+ 
+footer p.strong{
+    font-weight: bold;
+    padding-top: 0;
+}  
+footer p{
+    padding-top: 5px;
+} 
