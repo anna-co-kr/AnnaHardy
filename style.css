@@ -12,32 +12,24 @@ a{
 }
 
    /* common */
-
-   @font-face {
-    font-family: 'MapoGoldenPier';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
+   @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css); 
     ul {
         list-style: none;
         margin:0;
         text-decoration: none;
     }
     body {
-        background:#FEFBFB;
+        background:#ffffff;
         margin:0;
-        font-family: 'MapoGoldenPier', 'san serif'; 
-        max-width:800px;
+        font-family: 'Jeju Myeongjo', serif; 
         color:#000;
     }
     header {
-        height:100%;
+       border-bottom:1px solid #999;
+       padding-bottom: 30px;
     }
     main {
         text-align: center;
-        position: relative;
-        top: -7vh;
         font-size: 16px;
     }
     p {
@@ -49,66 +41,91 @@ a{
     }
 
     /* header */
-
-    .body {
-        max-width:800px;
-        width:100%;
-        margin:0 auto;
-    }
     .header_name {
-        font-size: 1.2rem;
-        line-height:150%;
+        font-size:25px; 
+        text-align:center; 
+        letter-spacing: .1rem;;
+        line-height:80px; 
+        border-top:1px solid #999; 
+        border-bottom: 1px solid #999;
+        margin: 70px 0 38px;
     }
-    .header_name li {
-        display: inline-block;
-        position:absolute;
+    .main_img {
+        position:relative;
+        padding:0 16px;
     }
-    .header_name li:first-child {
-        right:29vw;
-        top:8vh;
+    .main_img .date_wedding {
+        position: absolute;
+        width: calc(100% - 32px);
     }
-    .header_name li:nth-child(2) {
-        right:19vw;
-        top:13vh;
+    .main_img .photo_main_01 {
+        border-radius:100%;
+        padding-top:26px;
     }
-
-    .header_wedding_font {
-        width: 100%;
-        position: relative;
-        top:-8vh;
+    .time_to_wedding {
+        padding:0 16px;
+        font-size: 20px;
     }
 
     /* main */
-    .main_name {
-        display:flex;
-        justify-content: center;
-        margin: 8vh 0;
+    .hello_intro {
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+        margin-top: 70px;
+        padding:46px 0;
+        color:#444;
     }
-    .main_name img {
-        margin: 0 4vw;
-        width: 6vw;
+    .hello_intro .wording_intro {
+        margin-bottom: 20px;
+        line-height: 150%;;
     }
-    .main_date {
-        font-size: 3rem;
-        font-family: 'Libre Baskerville', serif;
+    .named_introduce {
+        margin: 50px;
+    }
+    .named_introduce .dot {
+        width: 6px;
+        height: 6px;
+        border-radius : 100%;
+        position: absolute;
+        margin-top: 9px;
+        margin-left: -18px;
+    }
+    .named_introduce .gender_color {
+        display:inline-block;
+        position: relative;
+        margin-bottom: 6px;
+        
+    }
+    .named_introduce .dot.blu {
+        background:#31A7CD;
+    }
+
+    .named_introduce .dot.pink {
+        background:#F36FFF;
+    }   
+
+    .named_introduce .bold_em {
         font-weight: bold;
-        letter-spacing: 0.3rem;
-        padding-bottom:1vh;
+        color:#000;
+        font-size:20px;
+        letter-spacing: .1rem;
     }
-    .main_info {
-        line-height:200%;
+
+    .suseo_logo {
+        width:30%;
     }
-    .main_flower {
-        width:13vw;
-        margin: 8vh 0;
+    .gallery_header {
+        border-bottom: 1px solid #999;
+        margin: 0 16px;
+        padding: 20px 0;
     }
-    .main_name_bold {
-        font-size: 1.5rem;
+    .gallery_header img {
+        width: 50%;
     }
-    #main_name_font_size {
-        font-size: 16px;
+    .gallery_content {
+        padding: 0 16px;
     }
-    .map_title {margin-top:10vh;}
+
 
 .line1{
     width: 30%;
@@ -174,6 +191,9 @@ a{
 
 .calendar {
     text-align: center;
+    padding: 0 16px;
+    border-top:1px solid #999;
+    border-bottom:1px solid #999;
 }
 .calendar_img {
     width:300px;
