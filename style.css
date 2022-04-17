@@ -141,6 +141,23 @@ a{
         font-weight: 900;
         font-size:23px;
     }
+    .calendar_may {
+        width:40%;
+        float:left;
+        padding:60px 0 30px;
+    }
+    .calendar_header{
+        padding:22px 10px;
+        border-top: 1px solid #999;
+        border-bottom:1px solid #999;
+    }
+    .calendar_content {
+        padding:20px 10px 30px;
+        border-bottom: 1px solid #999;;
+    }
+    .d_day {
+        padding:30px 0;
+    }
 
 .line1{
     width: 30%;
