@@ -105,7 +105,7 @@
             <img src="./images/calendar_header.svg" alt="calendar_header" class="calendar_header"/>
             <img src="./images/calendar_content.svg" alt="calendar_content" class="calendar_content"/>
             <section class="d_day">
-                <div>결혼식이<div id="newcountdown"></div>일 남았습니다.</div>
+                <div>결혼식이<div class="counter"></div>일 남았습니다.</div>
             </section>
         </section>
         <!-- // 캘린더 // -->
@@ -229,41 +229,15 @@ $(document).ready(function() {
         direction: 'vertical', loop: true }) }); 
 </script>
 <script>
-CountDownTimer('28/05/2022 04:00 PM', 'newcountdown'); 
-
-function CountDownTimer(dt, id)
-{
-var end = new Date(dt);
-
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-var now = new Date();
-var distance = end - now;
-if (distance < 0) {
-
-clearInterval(timer);
-document.getElementById(id).innerHTML = '0';
-
-return;
-}
-var days = Math.floor(distance / _day);
-var hours = Math.floor((distance % _day) / _hour);
-var minutes = Math.floor((distance % _hour) / _minute);
-var seconds = Math.floor((distance % _minute) / _second);
-
-document.getElementById(id).innerHTML = days + '일 ';
-document.getElementById(id).innerHTML += hours + '시간 ';
-document.getElementById(id).innerHTML += minutes + '분 ';
-document.getElementById(id).innerHTML += seconds + '초';
-}
-
-timer = setInterval(showRemaining, 1000);
-}
+    
+        let counter = document.querySelector('.counter');
+        let today = new Date(), //현재 날짜 가져오기
+            dday = new Date("May 28,2022, 00:00:00").getTime(), //디데이
+            gap = dday - today,
+            result = Math.floor(gap / (1000 * 60 * 60 * 24));
+        
+        counter.innerHTML = `D-${result}`
+    
 </script>
    
 </body>

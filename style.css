@@ -135,9 +135,9 @@ a{
         white-space: nowrap;
         overflow: auto;
    } 
-#newcountdown {
-    font-weight: 500;;
-}
+   .counter {
+
+    }
 
 .line1{
     width: 30%;
