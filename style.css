@@ -192,6 +192,7 @@ a{
 #location .icon .appLink img {
     width:45px;
     border-radius: 100%;
+    box-shadow:4px 4px 9px hsl(0deg 0% 0% / 20%);
 }
 #location .icon ul li:not(:last-child){
     
