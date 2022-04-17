@@ -28,7 +28,7 @@ a{
     }
     header {
        border-bottom:1px solid #999;
-       padding-bottom: 30px;
+       padding-bottom: 46px;
     }
     main {
         text-align: center;
@@ -46,11 +46,11 @@ a{
     .header_name {
         font-size:25px; 
         text-align:center; 
-        letter-spacing: .1rem;;
+        letter-spacing: .2rem;;
         line-height:80px; 
         border-top:1px solid #999; 
         border-bottom: 1px solid #999;
-        margin: 70px 0 38px;
+        margin: 60px 0 38px;
     }
     .main_img {
         position:relative;
@@ -67,6 +67,8 @@ a{
     .time_to_wedding {
         padding:0 16px;
         font-size: 20px;
+        letter-spacing: .1rem;
+        line-height: 120%;
     }
 
     /* main */
@@ -74,12 +76,13 @@ a{
         border-top: 1px solid #999;
         border-bottom: 1px solid #999;
         margin-top: 70px;
-        padding:46px 0;
+        padding:46px 0 52px;
         color:#444;
     }
     .hello_intro .wording_intro {
         margin-bottom: 20px;
-        line-height: 150%;;
+        line-height: 180%;
+        letter-spacing: .03rem;
     }
     .named_introduce {
         margin: 50px;
@@ -95,7 +98,7 @@ a{
     .named_introduce .gender_color {
         display:inline-block;
         position: relative;
-        margin-bottom: 6px;
+        margin-bottom: 15px;
         
     }
     .named_introduce .dot.blu {
@@ -110,7 +113,7 @@ a{
         font-weight: bold;
         color:#000;
         font-size:20px;
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
     }
 
     .suseo_logo {
@@ -127,7 +130,11 @@ a{
     .gallery_content {
         padding: 0 16px;
     }
-
+    .slide-wrapper {
+        display:flex;
+        white-space: nowrap;
+        overflow: auto;
+   } 
 
 .line1{
     width: 30%;
