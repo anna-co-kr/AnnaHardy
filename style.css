@@ -253,6 +253,11 @@ footer{
     padding-top: 10px;
     text-align: center;
     color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer {
+    padding: 50px 0 16px;
 }
 footer a.num{
     font-weight: bold;
@@ -278,19 +283,30 @@ footer p.strong{
     padding:6px;
 }
 .inform {
-    background:#000 ;
+    background:#555 ;
     color:#fff;
     padding:30px 16px;
+    line-height: 160%;
+    font-size:15px;
+    margin-top:50px;
 }
 
 .btn_open{ 
-    margin:5px; 
+    margin:20px; 
     padding:16px 6px; 
     display:block; 
     text-align:center; 
-    border:1px solid #999; 
     color:#000; 
     border-radius:50px;
+    box-shadow: 4px 4px 12px hsl(0deg 0% 0%/20%);
+}
+.btn_open.g:hover{
+    background:#31A7CD;
+    color:#fff;
+}
+.btn_open.b:hover{
+    background:#F36FFF;
+    color:#fff;
 }
 .pop_wrap{
     position:fixed; 
