@@ -286,3 +286,11 @@ footer p.strong{
 footer p{
     padding-top: 5px;
 } 
+.call_ {
+    width:24px;
+    display: inline-block;
+    margin-right:10px;
+    border:1px solid #999;
+    box-shadow:4px 4px 9px hsl(0deg 0% 0%/20%);
+    padding:8px;
+}
