@@ -287,10 +287,12 @@ footer p{
     padding-top: 5px;
 } 
 .call_ {
-    width:24px;
+    width:32px;
+    height:32px;
     display: inline-block;
     margin-right:10px;
     border:1px solid #999;
+    border-radius:100%;
     box-shadow:4px 4px 9px hsl(0deg 0% 0%/20%);
-    padding:8px;
+    padding:6px;
 }
