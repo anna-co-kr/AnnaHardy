@@ -1,5 +1,5 @@
 /*style.css*/
-@import url('https://webfontworld.github.io/jeju/JejuMyeongjo.css');
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
 
 *{
@@ -149,25 +149,10 @@ a{
         float:left;
         padding:60px 0 30px;
     }
-    .calendar_header{
-        padding:22px 10px;
-        border-top: 1px solid #999;
-        border-bottom:1px solid #999;
-    }
     .calendar_content {
         padding:20px 10px 30px;
         border-bottom: 1px solid #999;
         position:relative;
-    }
-    .calendar_content:after {
-        content:'';
-        position: absolute;
-        bottom:0;
-        right:0;
-        border:3px solid #000;
-        border-radius:100%;
-        width:20px;
-        height:20px;
     }
     .d_day {
         padding:30px 0;
