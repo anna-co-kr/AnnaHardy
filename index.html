@@ -178,17 +178,55 @@
 
         <footer>
             <div class="footer">마음전하는 곳</div>
+            <section class="wrap">
+                <a href="#pop_info_1" class="btn_open">신랑측 계좌번호</a>
+                <a href="#pop_info_2" class="btn_open">신부측 계좌번호</a>
+              
+              
+                <div id="pop_info_1" class="pop_wrap" style="display:none;">
+                  <div class="pop_inner">
+                    <p class="dsc">카카오뱅크 (성연철)<br>
+                      <div id="copy">3333131915039</div>
+                      <button id="btn_div_copy">복사하기</button><br>
+                    </p>
+                    <button type="button" class="btn_close">닫기</button>
+                  </div>
+                </div>
+              
+                <div id="pop_info_2" class="pop_wrap" style="display:none;">
+                  <div class="pop_inner">
+                    <p class="dsc">하나은행 (한재원)<br>
+                      <div id="copy">35291038218007</div>
+                      <button id="btn_div_copy">복사하기</button><br>
+                    </p>
+                    <button type="button" class="btn_close">닫기</button>
+                  </div>
+                </div>
+              </section>
+              
             <section>
                 <div><span style="vertical-align: super;">신랑</span>
                     <a href='tel:010-2576-0083'>
                         <img src="./images/call.png" class="call_">
                     </a>
                 </div>
+                <button>
+
+                </button>
                 <div><span style="vertical-align: super;">신부</span>
                     <a href='tel:010-2790-6530'>
                         <img src="./images/call.png" class="call_">
                     </a>
-                </div>              
+                </div>  
+                <button>
+
+                </button>            
+            </section>
+            <section class="inform">
+                <div>
+                    축하 화환은 식장의 이유로 정중히 사양합니다.
+                    좋은 마음만 감사히 받겠습니다.
+                </div>
             </section>
         </footer>
 
@@ -240,6 +278,43 @@ $(document).ready(function() {
         
         counter.innerHTML = `D-${result}`
     
+</script>
+<script>
+var target = document.querySelectorAll('.btn_open');
+var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+var targetID;
+
+// 팝업 열기
+for(var i = 0; i < target.length; i++){
+  target[i].addEventListener('click', function(){
+    targetID = this.getAttribute('href');
+    document.querySelector(targetID).style.display = 'block';
+  });
+}
+
+// 팝업 닫기
+for(var j = 0; j < target.length; j++){
+  btnPopClose[j].addEventListener('click', function(){
+    this.parentNode.parentNode.style.display = 'none';
+  });
+}
+
+// 값 복사 기능 구현 
+document.getElementById("btn_div_copy").onclick = function(){ 
+  // div 내부 텍스트 취득 
+  const valOfDIV = document.getElementById("copy").innerText; 
+  // textarea 생성 
+  const textArea = document.createElement('textarea'); 
+  // textarea 추가 
+  document.body.appendChild(textArea); 
+  // textara의 value값으로 div내부 텍스트값 설정 
+  textArea.value = valOfDIV; 
+  // textarea 선택 및 복사 
+  textArea.select(); document.execCommand('copy'); 
+  // textarea 제거 
+  document.body.removeChild(textArea); 
+}
+
 </script>
    
 </body>
