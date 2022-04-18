@@ -186,7 +186,9 @@
                   <div class="pop_inner">
                     <p class="dsc">카카오뱅크 (성연철)<br>
                       <div id="copy">3333131915039</div>
-                      <button id="btn_div_copy">복사하기</button><br>
+                      <button id="btn_div_copy">복사하기</button>
+                      <div class='active_copy' style='display:none'>복사완료!</div>
+                      <br>
                     </p>
                     <button type="button" class="btn_close">닫기</button>
                   </div>
@@ -196,7 +198,9 @@
                   <div class="pop_inner">
                     <p class="dsc">하나은행 (한재원)<br>
                       <div id="copy">35291038218007</div>
-                      <button id="btn_div_copy">복사하기</button><br>
+                      <button id="btn_div_copy">복사하기</button>
+                      <div class='active_copy' style='display:none'>복사완료!</div>
+                      <br>
                     </p>
                     <button type="button" class="btn_close">닫기</button>
                   </div>
@@ -257,9 +261,16 @@ $(document).ready(function() {
 });       
 </script>
 
-<script> $(document).ready(function () { 
+<script> 
+    $(document).ready(function () { 
     var mySwiper = new Swiper ('.swiper-container', {  
         direction: 'vertical', loop: true }) }); 
+
+    $(document) .ready(function() {    
+ 	$("#btn_div_copy") .click(function(){
+	$('.active_copy').fadeIn(400).delay(1000).fadeOut(400); //fade out after 3 seconds
+    });    
+ });    
 </script>
 <script>
     

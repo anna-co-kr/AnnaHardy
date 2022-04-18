@@ -266,10 +266,7 @@ footer p, p.strong{
 footer p.strong{
     font-weight: bold;
     padding-top: 0;
-}  
-footer p{
-    padding-top: 5px;
-} 
+}
 .call_ {
     width:32px;
     height:32px;
@@ -339,7 +336,11 @@ footer p{
 #btn_div_copy {
     border:1px solid #999; 
     background:#fff; 
+    color:#444;
     padding:3px 10px; 
     margin-left:3px; 
     border-radius:50px;
+}
+.active_copy {
+    padding-top:15px;
 }
