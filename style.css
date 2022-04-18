@@ -110,7 +110,7 @@ a{
     }   
 
     .named_introduce .bold_em {
-        font-weight: bold;
+        font-weight: 700;
         color:#000;
         font-size:20px;
         letter-spacing: .2rem;
