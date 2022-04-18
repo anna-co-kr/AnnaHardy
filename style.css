@@ -277,7 +277,7 @@ footer p.strong{
     width:32px;
     height:32px;
     display: inline-block;
-    margin-right:10px;
+    margin:0 10px;
     border-radius:100%;
     box-shadow:4px 4px 9px hsl(0deg 0% 0%/20%);
     padding:6px;
@@ -360,4 +360,25 @@ footer p.strong{
 }
 .active_copy {
     padding-top:15px;
+}
+.call_to {
+    display:flex;
+    border-top: 1px solid #999;
+    margin: 50px 16px;
+    padding-top: 30px;
+}
+.call_to div {
+    flex-grow: 1;
+}
+.call_to .you {
+    position: relative;
+}
+.call_to .you::after {
+    content:'';
+    width:1px;
+    height:14px;
+    background: #999;
+    position: absolute;
+    right:0;
+    top:12px;
 }
