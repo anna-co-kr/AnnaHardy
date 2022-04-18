@@ -339,6 +339,16 @@ footer p.strong{
     line-height:180%; 
     border-bottom:1px solid #999;
 }
+.dsc input{
+    border: none;
+    font-size: 18px;
+    outline: none;
+    text-align: center;
+    border-top: 1px solid #9999;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
 .btn_close {
     background:#000; 
     color:#fff; 
