@@ -299,6 +299,8 @@ footer p.strong{
     color:#000; 
     border-radius:50px;
     box-shadow: 4px 4px 12px hsl(0deg 0% 0%/20%);
+    font-size: 16px;
+    font-weight: 400;
 }
 .btn_open.g:hover{
     background:#31A7CD;
@@ -377,7 +379,7 @@ footer p.strong{
     content:'';
     width:1px;
     height:14px;
-    background: #999;
+    background: #dfdfdf;
     position: absolute;
     right:0;
     top:12px;
