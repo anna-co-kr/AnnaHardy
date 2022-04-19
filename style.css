@@ -404,7 +404,7 @@ footer p.strong{
     flex-grow: 1;
 }
 .parents {
-    margin:24px
+    margin:24px 16px;
 }
 .y_p {
     font-size:15px;
