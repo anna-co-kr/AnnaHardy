@@ -281,6 +281,7 @@ footer p.strong{
     border-radius:100%;
     box-shadow:4px 4px 9px hsl(0deg 0% 0%/20%);
     padding:6px;
+    vertical-align: middle;
 }
 .inform {
     background:#555 ;
