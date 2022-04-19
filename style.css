@@ -340,6 +340,7 @@ footer p.strong{
     padding-bottom:20px; 
     line-height:180%; 
     border-bottom:1px solid #999;
+    letter-spacing: .1rem;
 }
 .dsc input{
     border: none;
@@ -363,6 +364,7 @@ footer p.strong{
 #copy {
     display:inline-block; 
     font-size:18px;
+    font-family: monospace;
 }
 #btn_div_copy {
     border:1px solid #999; 

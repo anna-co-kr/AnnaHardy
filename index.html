@@ -184,11 +184,13 @@
               
                 <div id="pop_info_1" class="pop_wrap" style="display:none;">
                   <div class="pop_inner">
-                    <p class="dsc">카카오뱅크 (성연철)<br>
-                      <div id="copy" style="display:block;">3333131915039</div>
-                      <button id="btn_div_copy" style="margin-top:20px;">복사하기</button>
-                      <br>
+                    <p class="dsc">카카오뱅크 성연철 (신랑)<br>
+                        <div id="copy" style="display:block; font-family: monospace; font-weight:normal;">3333131915039</div>
+                        <button id="btn_div_copy" style="margin-top:20px;">복사하기</button>
+                        <br>
                     </p>
+                      <p class="dsc" style="border:none; margin-bottom:0; padding-bottom:0;">농협은행 전상분 (혼주)<br><input id="copy" value="3521739988613" readonly><button onclick="copy_to_clipboard(event)" id="btn_div_copy"><span>복사하기</span></button></p>
+                   
                     <button type="button" class="btn_close">닫기</button>
                   </div>
                 </div>
@@ -196,7 +198,8 @@
                 <div id="pop_info_2" class="pop_wrap" style="display:none;">
                   <div class="pop_inner">
                     <p class="dsc" style="border:none; margin-bottom:0; padding-bottom:0;">하나은행 (한재원)<br>
-                      <input id="copy" value="35291038218007" readonly><button onclick="copy_to_clipboard(event)" id="btn_div_copy"><span>복사하기</span></button></p>
+                      <input id="copy" value="35291038218007" readonly><button onclick="copy_to_clipboard(event)" id="btn_div_copy"><span>복사하기</span></button>
+                    </p>
 
                     <button type="button" class="btn_close">닫기</button>
                   </div>
@@ -330,14 +333,8 @@ $(document).ready(function() {
 <script> 
     $(document).ready(function () { 
     var mySwiper = new Swiper ('.swiper-container', {  
-        direction: 'vertical', loop: true }) }); 
-
-    $(document) .ready(function() {    
- 	$("#btn_div_copy") .click(function(){
-	$('.active_copy').fadeIn(400).delay(1000).fadeOut(400); 
-    //fade out after 3 seconds
-    });    
- });    
+        direction: 'vertical', loop: true }) });    
+    
 </script>
 <script>
     
@@ -382,9 +379,10 @@ document.getElementById("btn_div_copy").onclick = function(){
   textArea.value = valOfDIV; 
   // textarea 선택 및 복사 
   textArea.select(); document.execCommand('copy'); 
+  alert('복사되었습니다, 감사합니다.');
   // textarea 제거 
   document.body.removeChild(textArea); 
-  alert('복사되었습니다, 감사합니다.');
+  
 }
 
 
