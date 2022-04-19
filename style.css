@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
 
-*{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +12,44 @@ a{
     color:#000;
 }
 
+.fadein {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
    /* common */
 
@@ -413,4 +451,7 @@ footer p.strong{
     color:#555;
     font-weight: 400;
 
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1.5s!important;
 }

@@ -8,15 +8,16 @@
     <title>05월 28일(토) 오후 4시 빌라드지디 수서 5F</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--폰트-->
     <link href="https://webfontworld.github.io/jeju/JejuMyeongjo.css" rel="stylesheet">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <!--jquery-->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body style="width: 100%; max-width:600px; margin:0 auto;">
+<body style="width: 100%; max-width:600px; margin:0 auto;" class="fadein">
     <header>
         <section class="header_name">
             성연철 & 한재원
@@ -33,7 +34,7 @@
     <main>
 
         <!-- 인삿말 -->
-        <section class="hello_intro">
+        <section class="hello_intro" data-aos="fade-up">
             
             <section class="wording_intro">
                 살랑이는 바람결에<br>
@@ -70,14 +71,14 @@
         <!-- // 인삿말 // -->
         
         <!-- 갤러리 -->
-        <section class="gallery">
+        <section class="gallery" data-aos="fade-up">
             <section class="gallery_header">
                 <img src="./images/Gallery_wording.svg" alt="gallery">
                 <div style="color:#444;">갤러리</div>
             </section>
             <section class="gallery_content">
                 <div style="text-align: right; padding:20px 0; letter-spacing: .03rem;">* 오른쪽으로 넘겨주세요.</div>
-                <section class="swiper-container">
+                <section class="swiper-container" data-aos="fade-up">
                     <section class="slide-wrapper">
                         <img src="./images/swipe_01.jpg" alt="photo_1" class="swiper-slide"/>
                         <img src="./images/swipe_02.jpg" alt="photo_2" class="swiper-slide"/>
@@ -96,14 +97,14 @@
         <section class="calendar">
             <img src="./images/calendar_may.svg" alt="calendar_may" class="calendar_may"/>
             <img src="./images/calendar__.svg" alt="calendar_header" class="calendar_header"/>
-            <section class="d_day">
+            <section class="d_day" data-aos="fade-up">
                 <div>결혼식이<div class="counter"></div>일 남았습니다.</div>
             </section>
         </section>
         <!-- // 캘린더 // -->
 
         <!-- 예식순서 -->
-        <section class="time_table">
+        <section class="time_table" data-aos="fade-up">
             <section class="time_1">
                 <img src="./images/info.svg" alt="info">
             </section>
@@ -111,7 +112,7 @@
         <!-- // 예식순서 // -->
 
         <!-- 오시는 길 -->
-        <section class="location">
+        <section class="location" data-aos="fade-up">
             <section class="location_header">
                 <div>오시는 길</div>
                 <img src="./images/suseo_logo_.svg" alt="suseo_logo" class="suseo_logo">
@@ -125,7 +126,7 @@
 
     </main>
         
-        <section id="location">
+        <section id="location" data-aos="fade-up">
 
            <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.43477179141!2d127.11290135171457!3d37.47406537971632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca59f73741575%3A0x3f21b638074b5529!2z67mM652865Oc7KeA65SUIOyImOyEnOygkA!5e0!3m2!1sko!2skr!4v1650311286255!5m2!1sko!2skr" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -175,7 +176,7 @@
            </div>
         </section>
 
-        <footer>
+        <footer data-aos="fade-up">
             <div class="footer">마음전하는 곳</div>
             <section class="wrap">
                 <a href="#pop_info_1" class="btn_open g">신랑측 계좌번호</a>
@@ -334,7 +335,7 @@ $(document).ready(function() {
     $(document).ready(function () { 
     var mySwiper = new Swiper ('.swiper-container', {  
         direction: 'vertical', loop: true }) });    
-    
+
 </script>
 <script>
     
@@ -393,6 +394,9 @@ function copy_to_clipboard(event) {
   document.execCommand("Copy");
   alert('복사되었습니다, 감사합니다.');
 }
+</script>
+<script>
+    AOS.init();
 </script>
    
 </body>
